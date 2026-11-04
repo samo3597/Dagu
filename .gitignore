@@ -1,0 +1,14 @@
+.vscode/
+.env
+.venv/
+files/*
+
+
+!.gitkeep
+
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
