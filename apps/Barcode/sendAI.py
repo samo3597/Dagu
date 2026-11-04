@@ -6,12 +6,12 @@ logger = logging.getLogger(__name__)
 
 
 def saveResulte():
-    with open('files/Step1.json', 'r') as f:
+    with open('Step1.json', 'r') as f:
         logger.info("Read Step1.py")
         txt = f.readlines()
         logger.info(txt)
     
-    with open('files/Step2.json', 'w') as f:
+    with open('Step2.json', 'w') as f:
         logger.info("Writing Step2.py")
         f.write('test 2')
 
