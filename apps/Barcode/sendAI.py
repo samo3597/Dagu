@@ -1,8 +1,8 @@
-import logging
-from common.logger import setup_logging
+from common import logger as log
+from common import GoogleAI
 
-setup_logging()
-logger = logging.getLogger(__name__)
+log.setup_logging()
+logger = log.getLogger(__name__)
 
 
 def saveResulte():
@@ -10,6 +10,10 @@ def saveResulte():
         logger.info("Read Step1.py")
         txt = f.readlines()
         logger.info(txt)
+
+    logger.info("Starting process_product_batch")
+    Res = GoogleAI.process_product_batch(txt)
+    logger.info("End process_product_batch")
     
     with open('Step2.json', 'w') as f:
         logger.info("Writing Step2.py")
