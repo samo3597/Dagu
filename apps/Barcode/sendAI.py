@@ -1,8 +1,8 @@
-from common import logger as log
-from common import GoogleAI
+import logger as log
+import GoogleAI
 
 log.setup_logging()
-logger = log.getLogger(__name__)
+logger = log.get_logger(__name__)
 
 
 def saveResulte():

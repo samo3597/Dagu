@@ -1,8 +1,7 @@
-import logging
-from common.logger import setup_logging
+import logger as log
 
-setup_logging()
-logger = logging.getLogger(__name__)
+log.setup_logging()
+logger = log.get_logger(__name__)
 
 
 def saveResulte():
