@@ -1,4 +1,4 @@
-import logger as log
+from common import logger as log
 
 log.setup_logging()
 logger = log.getLogger(__name__)
