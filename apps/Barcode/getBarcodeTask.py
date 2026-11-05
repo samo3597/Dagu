@@ -5,7 +5,7 @@ logger = log.get_logger(__name__)
 
 
 def saveResulte():
-    with open('Step1.json', 'w') as f:
+    with open('files/Step1.json', 'w') as f:
         logger.info("Writing Step1.py")
         f.write('test 1')
 

@@ -6,7 +6,7 @@ logger = log.get_logger(__name__)
 
 
 def saveResulte():
-    with open('Step1.json', 'r') as f:
+    with open('files/Step1.json', 'r') as f:
         logger.info("Read Step1.py")
         txt = f.readlines()
         logger.info(txt)
@@ -15,7 +15,7 @@ def saveResulte():
     Res = GoogleAI.process_product_batch(txt)
     logger.info("End process_product_batch")
     
-    with open('Step2.json', 'w') as f:
+    with open('files/Step2.json', 'w') as f:
         logger.info("Writing Step2.py")
         f.write('test 2')
 
