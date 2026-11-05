@@ -2,7 +2,7 @@
 .env
 .venv/
 files/*
-
+*.code-workspace
 
 !.gitkeep
 
