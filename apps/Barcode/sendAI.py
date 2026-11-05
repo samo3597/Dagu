@@ -90,10 +90,10 @@ def process_product_batch(batch_items: list) -> List[NormalizedProduct]:
         parsed_res = ProductBatchResponse.model_validate_json(response.text)
         return parsed_res.items
     except genai.errors.ServerError as e:
-        logger.error(f"Server error while processing batch: {e}")
+        logger.error(f"Server error while processing batch: {e}", exc_info=True)
         raise e
     except Exception as e:
-        logger.error(f"Error processing batch: {e}")
+        logger.error(f"Error processing batch: {e}", exc_info=True)
         raise e
 
 
